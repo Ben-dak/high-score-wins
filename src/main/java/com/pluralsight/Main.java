@@ -11,7 +11,9 @@ public class Main {
 
         String[] sections = input.split("\\|");
 
-
+        String[] team = sections[0].split(":");
+        String homeTeam = team[0];
+        String visitorTeam = team[1];
 
     }
 }
