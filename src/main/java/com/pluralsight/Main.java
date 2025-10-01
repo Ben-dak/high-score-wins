@@ -11,7 +11,6 @@ public class Main {
 
         String[] sections = input.split("\\|");
 
-        //This section will split the variables
         String[] team = sections[0].split(":");
         String homeTeam = team[0];
         String visitorTeam = team[1];
@@ -19,5 +18,14 @@ public class Main {
         String[] scores = sections[1].split(":");
         int score1 = Integer.parseInt(scores[0]);
         int score2 = Integer.parseInt(scores[1]);
+
+        if (score1 > score2) {
+            System.out.println("Winner: " + homeTeam);
+        } else if (score2 > score1) {
+            System.out.println("Winner: " + visitorTeam);
+        } else {
+            System.out.println("Tied");
+        }
+
     }
 }
